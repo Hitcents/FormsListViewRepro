@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:ListViewScrollToBug" x:Class="ListViewScrollToBug.ListViewScrollToBugPage">
+  <ContentView Padding="0,5" BackgroundColor="Red">
+    <Grid x:Name="_mainGrid">
+      <Grid.RowDefinitions>
+        <RowDefinition Height="88"/>
+        <RowDefinition/>
+      </Grid.RowDefinitions>
+
+      <Label Text="This is a ContentView containing a Grid with a Grid that has a Listview" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+
+      <Grid Grid.Row="1">
+        <Grid.RowDefinitions>
+          <RowDefinition/>
+          <RowDefinition Height="55"/>
+        </Grid.RowDefinitions>
+
+        <ListView x:Name="_listView"/>
+        <Entry x:Name="_entry" Grid.Row="1" TextColor="Black"/>
+      </Grid>
+    </Grid>
+  </ContentView>
+</ContentPage>
