@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+  xmlns:local="clr-namespace:BackgroundColorBug" 
+  BackgroundColor="Black"
+  x:Class="BackgroundColorBug.BackgroundColorBugPage">
+  <ContentView x:Name="_contentView" BackgroundColor="Lime">
+  <StackLayout x:Name="_stackLayout" IsVisible="false" Spacing="0" Orientation="Vertical">
+      <local:ExpanderView AutomationId="Friends" Text="Friends" Count="0" IsExpanded="false">
+        <local:ExpanderView.ExpanderContent>
+         <BoxView/>
+        </local:ExpanderView.ExpanderContent>
+      </local:ExpanderView>
+      <local:ExpanderView AutomationId="Incoming" Text="IncomingInvites" Count="0" IsExpanded="false">
+        <local:ExpanderView.ExpanderContent>
+         <BoxView/>
+        </local:ExpanderView.ExpanderContent>
+      </local:ExpanderView>
+      <local:ExpanderView AutomationId="Outgoing" Text="OutgoingInvites" Count="0" IsExpanded="false">
+        <local:ExpanderView.ExpanderContent>
+          <BoxView/>
+        </local:ExpanderView.ExpanderContent>
+      </local:ExpanderView>
+  </StackLayout>
+  </ContentView>
+</ContentPage>

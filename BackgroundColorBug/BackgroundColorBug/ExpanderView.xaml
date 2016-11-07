@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Grid 
+  xmlns="http://xamarin.com/schemas/2014/forms" 
+  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+  xmlns:local="clr-namespace:BackgroundColorBug;assembly=BackgroundColorBug" 
+  x:Class="BackgroundColorBug.ExpanderView"
+  RowSpacing="0">
+  <Grid.RowDefinitions>
+    <RowDefinition Height="45" />
+    <RowDefinition Height="Auto" />
+  </Grid.RowDefinitions>
+  <Grid x:Name="_headerGrid">
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="*" />
+      <ColumnDefinition Width="Auto" />
+    </Grid.ColumnDefinitions>
+  </Grid>
+  <ContentView Grid.Row="1" x:Name="_content" IsClippedToBounds="true" />
+</Grid>
